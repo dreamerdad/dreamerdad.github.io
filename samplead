@@ -1,0 +1,28 @@
+<style>
+#can7678{position:relative;width:297px;height:247px;line-height: 5px;border:1px solid black; background-color:black} #can7678yt{position:absolute;width:297px;height:217px} 
+#mainiframe{width:297px;height:190px} 
+#can7ee678{position:absolute; top:190px} 
+#khelogoandcta{position:absolute;top:220px} 
+#kheimage{position:absolute;display:block;margin-left:auto;margin-right:auto;height:25px;width:300px;} 
+#kheform{font-size:10px;margin-left:8px;}
+</style>
+<div id="can7678">
+<div id="can7678yt">
+  <iframe id="mainiframe" src="http://www.youtube.com/embed/XVIsq1VhGVE?modestbranding=1&rel=0&controls=2" frameborder="0" allowfullscreen></iframe>
+</div>
+<div id="can7ee678">
+<form target="_blank" id="kheform" action="http://knightsoftheholyeucharist.us7.list-manage.com/subscribe/post"  name="sample_sheet" method="post">
+  <input type="hidden" name="u" value="66f02a2e27e95a1ee237db047">
+  <input type="hidden" name="id" value="579f4bb4bc">
+  <input type="text" name="MERGE3" id="MERGE3" size="25" value="" placeholder="Your Name" style="width:90px;" required />
+  <input type="email" autocapitalize="off" autocorrect="off" name="MERGE0" id="MERGE0" size="25" value="" placeholder="Your Email" style="width:80px;" required />
+  <input type="image" onclick="close();" value="Submit" src="http://i.imgur.com/nIk9ena.png" width="100px"/>
+</div>
+<div id="khelogoandcta">
+<a href="http://knightsoftheholyeucharist.com" target="_blank">
+<img id="kheimage" src="http://i.imgur.com/WpImwe7.gif" alt="KofHELogoplusCTA" />
+
+</a>
+</div>
+</form>
+</div>
