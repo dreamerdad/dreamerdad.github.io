@@ -1,0 +1,54 @@
+
+<style>
+#mainCont *,body{margin:0;padding:0;border:none;outline:0;box-shadow:none;transition:none}
+#mainCont{background:#000;position:relative;width:300px;height:250px;overflow:hidden;}
+#videoCont{position:absolute;width:300px;height:210px}
+#videoCont>iframe{width:300px;height:169px}
+#endfm{position:absolute; display:none;z-index: 100}
+#formCont{position:absolute; bottom:0;z-index: 10}
+#formCont>form>#ctaCont>a>img{position:absolute;top:28px;left:4px;display:block;margin-left:auto;margin-right:auto;width:300px;height:31px}
+</style>
+<div id="mainCont">
+  <div id="videoCont">
+<div id="wistia_5abbsp8uom" class="wistia_embed" style="width:300px;height:169px;">&nbsp;</div>
+<script charset="ISO-8859-1" src="//fast.wistia.com/assets/external/E-v1.js"></script>
+<script>
+wistiaEmbed = Wistia.embed("5abbsp8uom", {
+  plugin: {
+    wistiafollows: {
+      people: [
+        {
+          screenName: "wistia"
+        },
+        {
+          screenName: "crux",
+          start: 0,
+          end: 33
+        }
+      ],
+      src: "//fast.wistia.com/labs/twitter-follows/wistia-follows.js"
+    }
+  },
+  playerColor: "000000"
+
+});
+
+//Fire when video ends
+wistiaEmbed.bind("end", function () {
+  document.getElementById("endfm").style.display = "inherit";
+});
+
+//Fire when video start to play
+wistiaEmbed.bind("play", function () {
+  (function() { function Action(h, a) { new Image().src = (location.protocol=="https:"?location.protocol:"http:") + h + "/action.gif?key=" + a + "&t=" + new Date().getTime(); } Action("//adxpro.net", "0e085a9bb264821bf0f28d4697b24447-23-124"); })();
+});
+
+</script>
+  </div>
+  <div id="endfm">
+	<a href="http://www.cruxnow.com" target="_blank"><img src="https://3812acd5afd1e9a63fb3-5a1a5e32164c83f480bc78c6487fe4e2.ssl.cf1.rackcdn.com/GettoCrux.jpg" alt="footer" height="250" width="300" class="endframe"></a> 
+  </div>
+  <div id="formCont">
+	<a href="http://www.cruxnow.com" target="_blank"><img src="https://3812acd5afd1e9a63fb3-5a1a5e32164c83f480bc78c6487fe4e2.ssl.cf1.rackcdn.com/bottom2.png" alt="footer" height="81" width="300"></a> 
+  </div>
+</div>
