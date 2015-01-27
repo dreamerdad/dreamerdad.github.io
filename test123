@@ -1,0 +1,14 @@
+<!-- BEGIN TAG - DO NOT MODIFY -->
+<script type="text/javascript">
+//<![CDATA[
+adxpro_key = "c3cc7ac8cff181228c0de14ff5c200dd";
+adxpro_channel = "";
+adxpro_code_format = "ads-sync.js";
+adxpro_ads_host = "//adxpro.net";
+adxpro_click = "";
+adxpro_custom_params = {};
+
+document.write("<script type='text\/javascript' src='"+(location.protocol == 'https:' ? 'https:' : 'http:') + "//adxpro.net\/js/show_ads_adxpro.js'><\/script>");
+//]]>
+</script>
+<!-- END TAG -->
