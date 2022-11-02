@@ -3,5 +3,20 @@
 <body>
 <h1>Hello World</h1>
 <p>I'm hosted with GitHub Pages.</p>
+  <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=GTM-MV77JRP"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'GTM-MV77JRP', {
+    transport_url: 'https://gtmserver.udallas.edu',
+  });
+  
+   function sendEvent() {
+    gtag('event', 'click');
+  }
+</script>
 </body>
 </html>
