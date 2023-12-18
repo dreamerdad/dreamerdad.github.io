@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="ad.size" content="width=300,height=250">
+  <meta property="og:image" content="">
+  <title>Banner</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="img/favicon.png" type="image/x-icon" />
+  <script src="js/jquery.min.js"></script>
+  <script src="js/jquery.ajaxchimp.min.js"></script>
+  <script type="text/javascript">
+   var clickTag = "https://spellmanbooks.com/shadows-of-freedom/"; 
+   $(document).ready(function(){
+
+    var pattern = /^([a-z0-9_\.-])+@[a-z0-9-]+\.([a-z]{2,4}\.)?[a-z]{2,4}$/i;
+    var email = $('#mce-EMAIL').val();
+
+    $('#btn1').on('click', function(e) {
+        e.preventDefault();
+        $('#banner').addClass('show');
+    });
+
+    $('#mc-embedded-subscribe').on('click', function(e) {
+      $(".req").each(function(index) {
+        if ($(this).val() == '') {
+            $(this).css('border', '1px solid red');
+        } else {
+            if($(this).attr('id')=='mce-EMAIL') {
+                if(pattern.test(email)) {
+                   $('#mce-EMAIL').css('border', '1px solid #c9e4f2');  
+                 } else {
+                   $('#mce-EMAIL').css('border', '1px solid red');
+                }
+            } 
+            
+        }
+      });
+    });
+
+    $(function() {
+      $('#subsForm').ajaxChimp({
+        callback: function(response) {
+
+          if (response.result === 'success') {
+              /*alert('subscribe');*/
+              $('#mce-EMAIL').val("");
+              $('#mce-EMAIL').css('border', '1px solid #c9e4f2');
+              window.open(clickTag);
+          }
+          $('form .result').text(response.msg);
+        }
+      });
+    })
+
+
+  });
+
+  </script>
+</head>
+
+  <body>
+
+    <div id="banner" class="banner">
+      <div class="lines">
+        <div class="lblue"></div>
+        <div class="dblue"></div>
+      </div>
+
+      <div class="line fl">
+        <div class="w50 book">
+          <img src="img/book.png" alt="book" />
+        </div>
+        <div class="w50">
+          <h4 class="title1">ALL-NEW</h4>
+          <h3 class="title2">Christian<br>Dystopian<br>Novel</h3>
+          <div class="fl btn1">
+            <a id="btn1" href="#" class="btncl">Get Four <br>Chapters <br>FREE</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="form-block">
+        <h4 class="title3 fs-18">Get Four Chapters Free</h4>
+        <form id="subsForm" method="post" action="https://catholicaudiencenetwork.us7.list-manage.com/subscribe/post?u=5773cd76c6b3b14fcdb4d9e64&amp;id=545d509b08" method="post">
+          <div class="field">
+            <div class="icon">
+              <img src="img/email.svg" alt="email" />
+            </div>
+            <input type="email" id="mce-EMAIL" name="EMAIL" placeholder="Email" class="req" required />
+          </div>
+          <input id="mc-embedded-subscribe" type="submit" name="subscribe" class="btncl btn2" value="Start Reading Now" />        
+          <p class="result" style="display: none;"></p>
+        </form>
+      </div>
+
+      
+    </div>
+
+  </body>
+</html>
